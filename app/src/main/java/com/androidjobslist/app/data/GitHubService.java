@@ -11,9 +11,6 @@ import retrofit.http.GET;
 import retrofit.http.Path;
 import retrofit.http.Query;
 
-/**
- * Created by John on 3/24/2014.
- */
 public interface GitHubService {
     @GET("/positions.json?description=android")
     public void listPositionsForAndroid(Callback<List<Job>> callback);
