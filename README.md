@@ -1,0 +1,1 @@
+Sample app created to gain basic understanding of Retrofit/Picasso/MasterDetailFlow pattern

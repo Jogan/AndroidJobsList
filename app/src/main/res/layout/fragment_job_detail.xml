@@ -1,0 +1,72 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/job_detail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.androidjobslist.app.ui.JobDetailFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_company_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+             />
+
+        <TextView
+            android:id="@+id/textCompany"
+            android:fontFamily="sans-serif-light"
+            android:textSize="24sp"
+            android:paddingBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_company_logo"
+            android:layout_centerHorizontal="true"
+            android:text="COMPANY" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:fontFamily="sans-serif-light"
+            android:textSize="20sp"
+            android:paddingBottom="4dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCompany"
+            android:layout_centerHorizontal="true"
+            android:text="TITLE" />
+
+        <TextView
+            android:id="@+id/textLocation"
+            android:fontFamily="sans-serif-light"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:paddingBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textTitle"
+            android:layout_centerHorizontal="true"
+            android:text="LOCATION" />
+
+        <TextView
+            android:id="@+id/textDescription"
+            android:layout_width="match_parent"
+            android:fontFamily="sans-serif-light"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textLocation" />
+
+        <Button
+            android:id="@+id/btn_view_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textDescription"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif"
+            android:text="Get More Info" />
+    </RelativeLayout>
+
+</ScrollView>
